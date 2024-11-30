@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/6e1ff255-2260-4076-a619-20eee1976fc3)
+
 ![Thumbnail](./thumbnail.png)
 
 # Memoteca
