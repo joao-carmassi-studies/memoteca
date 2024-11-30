@@ -39,7 +39,7 @@ const ui = {
         pensamentosParaRenderizar.forEach(ui.adicionarPensamentoNaLista);
       }
     } catch {
-      alert("Erro ao renderizar pensamentos");
+      //alert("Erro ao renderizar pensamentos");
     }
   },
 
@@ -93,7 +93,7 @@ const ui = {
         await api.excluirPensamento(pensamento.id);
         ui.renderizarPensamentos();
       } catch (error) {
-        alert("Erro ao excluir pensamento");
+        //alert("Erro ao excluir pensamento");
       }
     };
 
@@ -109,7 +109,7 @@ const ui = {
         api.atualizarFavorito(pensamento.id, !pensamento.favorito);
         ui.renderizarPensamentos();
       } catch (error) {
-        alert("Erro ao atualizar pensamentos");
+        //alert("Erro ao atualizar pensamentos");
         throw error;
       }
     };
