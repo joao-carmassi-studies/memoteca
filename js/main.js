@@ -13,7 +13,7 @@ async function adicionaChaveAoPensamento() {
       pensamentosSet.add(chaveNovoPensamento);
     });
   } catch (error) {
-    alert(error);
+    //alert(error);
   }
 }
 
@@ -96,7 +96,7 @@ async function manipularSubmissaoFormulario(event) {
     }
     ui.renderizarPensamentos();
   } catch {
-    alert("Erro ao salvar pensamento");
+    //alert("Erro ao salvar pensamento");
   }
 }
 
@@ -110,7 +110,7 @@ async function manipularBusca(termo) {
     const pensamentosFiltrados = await api.buscarPesamentosPorTermo(termo);
     ui.renderizarPensamentos(pensamentosFiltrados);
   } catch (error) {
-    alert(`Erro ao realizar busca ${error}`);
+    //alert(`Erro ao realizar busca ${error}`);
   }
 }
 
