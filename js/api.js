@@ -18,7 +18,7 @@ const api = {
         };
       });
     } catch {
-      alert("Erro ao buscar pensamentos");
+      //alert("Erro ao buscar pensamentos");
       throw error;
     }
   },
@@ -33,7 +33,7 @@ const api = {
       });
       return await response.data;
     } catch {
-      alert("Erro ao salvar pensamento");
+      //alert("Erro ao salvar pensamento");
       throw error;
     }
   },
@@ -48,7 +48,7 @@ const api = {
         data: new Date(pensamento.data),
       };
     } catch {
-      alert("Erro ao buscar pensamento");
+      //alert("Erro ao buscar pensamento");
       throw error;
     }
   },
@@ -61,7 +61,7 @@ const api = {
       );
       return await response.data;
     } catch {
-      alert("Erro ao editar pensamento");
+      //alert("Erro ao editar pensamento");
       throw error;
     }
   },
@@ -70,7 +70,7 @@ const api = {
     try {
       const response = await axios.delete(`${URL_BASE}/pensamentos/${id}`);
     } catch {
-      alert("Erro ao excluir um pensamento");
+      //alert("Erro ao excluir um pensamento");
       throw error;
     }
   },
@@ -89,7 +89,7 @@ const api = {
 
       return pensamentosFiltrados;
     } catch (error) {
-      alert("Erro ao filtrar pensamentos");
+      //alert("Erro ao filtrar pensamentos");
       throw error;
     }
   },
@@ -99,7 +99,7 @@ const api = {
       const res = axios.patch(`${URL_BASE}/pensamentos/${id}`, { favorito });
       return res.data;
     } catch (error) {
-      alert("Erro ao atualizar favorito");
+      //alert("Erro ao atualizar favorito");
       throw error;
     }
   },
